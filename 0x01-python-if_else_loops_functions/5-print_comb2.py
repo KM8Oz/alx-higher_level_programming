@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-for num in range(8):
-    for n in range(num, 9):
-        if n != 9 and num != 8:
-            print("{:d}{:d},".format(num, n), end=' ')
-        else:
-            print("{:d}{:d},".format(num, n))
+for num in range(100):
+    if num < 99:
+        print("{:02d},".format(num), end=' ')
+    else:
+        print("{:02d}".format(num))
