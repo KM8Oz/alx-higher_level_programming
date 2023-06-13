@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
-    if matrix != [[]]:
-        _ = [[(print("{:d}".format(j[1]), end='') or ((j[0] != 2 or print()) and print(
-            " ", end=''))) for j in enumerate(sub)] for sub in matrix]
-    else:
-        print('')
+    for i in range(len(matrix)):
+        for j in range((len(matrix[i]))):
+            if (j < (len(matrix[i])) - 1):
+                print("{:d}".format(matrix[i][j]), end=' ')
+            else:
+                print("{:d}".format(matrix[i][j]), end='')
+        print()
